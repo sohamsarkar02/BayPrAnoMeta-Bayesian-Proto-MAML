@@ -109,7 +109,7 @@ Extends Bayesian ProtoMAML with Supervised Contrastive Learning.
 
 ### 5. Federated Bayesian ProtoMAML (`Federated Bayesian_ProtoMAML/`)
 
-Distributed version using FedAvg for multi-client training.
+Federated Learning version for multi-client training.
 
 | File | Description |
 |------|-------------|
