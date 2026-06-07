@@ -1,10 +1,10 @@
 # Meta-Learning for Anomaly Detection
 
-This repository contains implementations of various meta-learning approaches for few-shot anomaly detection on the **MVTec Anomaly Detection Dataset**.
+This repository contains implementations of various meta-learning approaches for few-shot anomaly detection on the **MVTec Anomaly Detection Dataset** and further we also report training and evaluation scripts for **VisA Dataset**.
 
 ## Results Summary
 
-Average performance across 15 object categories (Leave-One-Anomaly-Subtype-Out protocol):
+Average performance across 15 object categories (Leave-One-Anomaly-Subtype-Out protocol) of MVTec AD Dataset:
 
 | Method | AUC-ROC | AUPRC | F1 Score |
 |--------|---------|-------|----------|
@@ -36,7 +36,7 @@ ML Codes/
 
 ---
 
-## Methods Overview
+## Methods Overview (For convenience we report the summary for MVTec AD Dataset only, here in this file)
 
 ### 1. Bayesian ProtoMAML (`Bayesian_ProtoMAML/`)
 
