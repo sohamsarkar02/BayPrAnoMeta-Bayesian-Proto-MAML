@@ -1,6 +1,6 @@
 # Meta-Learning for Anomaly Detection
 
-This repository contains implementations of various meta-learning approaches for few-shot anomaly detection on the **MVTec Anomaly Detection Dataset** and further we also report training and evaluation scripts for **VisA Dataset**.
+This repository contains implementations of various meta-learning approaches for few-shot anomaly detection on the **MVTec Anomaly Detection Dataset** and further we also report training and evaluation scripts for **VisA Dataset** in the folder named **VisA Dataset Code**.
 
 ## Results Summary (For convenience we report the summary for MVTec AD Dataset only, here in this file)
 
