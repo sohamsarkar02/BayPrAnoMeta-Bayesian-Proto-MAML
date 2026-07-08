@@ -26,8 +26,7 @@ from utils.utils_data_fedcontrast_leave1out import (
 # ---------------- CONFIG ---------------- #
 
 BASE_ROOT = (
-    "/Users/sohamsarkar/Desktop/Projects/"
-    "Research Projects/MAML/ML Project/Datasets/"
+    "/.../"
     "MVTech AD Dataset"
 )
 
@@ -37,7 +36,7 @@ CLIENTS = [
     "tile","toothbrush","transistor","wood","zipper"
 ]
 
-# 🔹 MUST match the 50% training script
+#  MUST match the 50% training script
 MODEL_DIR = "runs/patchcore_shared_encoder_50pct"
 MEMORY_DIR = f"{MODEL_DIR}/memory_bank"
 OUT_DIR = f"{MODEL_DIR}/eval_results"
