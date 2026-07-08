@@ -21,8 +21,7 @@ from utils.utils_data_fedcontrast_leave1out import (
 # ---------------- CONFIG ---------------- #
 
 BASE_ROOT = (
-    "/Users/sohamsarkar/Desktop/Projects/"
-    "Research Projects/MAML/ML Project/Datasets/"
+    "/.../"
     "MVTech AD Dataset"
 )
 
@@ -38,7 +37,7 @@ OUT_DIR = "runs/patchcore_shared_encoder"
 MEMORY_DIR = f"{OUT_DIR}/memory_bank"
 os.makedirs(MEMORY_DIR, exist_ok=True)
 
-CORESET_FRACTION = 0.10   # 10% as decided
+CORESET_FRACTION = 0.10  
 
 random.seed(42)
 np.random.seed(42)
