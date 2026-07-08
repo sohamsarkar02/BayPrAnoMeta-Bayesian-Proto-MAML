@@ -36,7 +36,7 @@ CLIENTS = [
     "tile","toothbrush","transistor","wood","zipper"
 ]
 
-# 🔹 MUST match the 100% training script
+#  MUST match the 100% training script
 MODEL_DIR = "runs/patchcore_shared_encoder_100pct"
 MEMORY_DIR = f"{MODEL_DIR}/memory_bank"
 OUT_DIR = f"{MODEL_DIR}/eval_results"
