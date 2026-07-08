@@ -21,8 +21,7 @@ from utils.utils_data_fedcontrast_leave1out import (
 # ---------------- CONFIG ---------------- #
 
 BASE_ROOT = (
-    "/Users/sohamsarkar/Desktop/Projects/"
-    "Research Projects/MAML/ML Project/Datasets/"
+    "/.../"
     "MVTech AD Dataset"
 )
 
@@ -34,12 +33,12 @@ CLIENTS = [
 
 DEVICE = torch.device("cpu")
 
-# 🔹 NEW output directory (separate from 10%)
+
 OUT_DIR = "runs/patchcore_shared_encoder_25pct"
 MEMORY_DIR = f"{OUT_DIR}/memory_bank"
 os.makedirs(MEMORY_DIR, exist_ok=True)
 
-CORESET_FRACTION = 0.25   # 🔹 25% coreset
+CORESET_FRACTION = 0.25   
 
 random.seed(42)
 np.random.seed(42)
