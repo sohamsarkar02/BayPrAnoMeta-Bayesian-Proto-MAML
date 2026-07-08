@@ -21,17 +21,17 @@ from sklearn.manifold import TSNE
 from utils.utils_niw import niw_posterior, log_student_t
 from utils.utils_eval_stats import compute_episode_metrics, aggregate_with_se
 from utils.utils_plotting import plot_roc_curve, plot_pr_curve, plot_score_histogram
-from utils.utils_data_visa_unseen_anomaly import (   # CHANGED
-    load_client_dataset_visa,                        # CHANGED
+from utils.utils_data_visa_unseen_anomaly import (   
+    load_client_dataset_visa,                        
     load_images,
     transform_eval,
 )
 
 # ---------------- CONFIG ---------------- #
 
-BASE_ROOT = "/Users/sohamsarkar/Desktop/ViSA Dataset"   # CHANGED
+BASE_ROOT = "/.../ViSA Dataset"   
 
-CLIENTS = [                                             # CHANGED
+CLIENTS = [                                             
     "candle",
     "capsules",
     "cashew",
@@ -46,8 +46,8 @@ CLIENTS = [                                             # CHANGED
     "pipe_fryum"
 ]
 
-MODEL_PATH = "runs/fed_bpmaml_visa/final_model.pth"   # CHANGED
-OUT_DIR = "runs/fed_bpmaml_visa/eval"                 # CHANGED
+MODEL_PATH = "runs/fed_bpmaml_visa/final_model.pth"   
+OUT_DIR = "runs/fed_bpmaml_visa/eval"                
 
 DEVICE = torch.device("cpu")
 
@@ -95,13 +95,13 @@ def evaluate_client(model, client, pr_curves):
 
     print(f"\nEvaluating → {client}")
 
-    data = load_client_dataset_visa(Path(BASE_ROOT) / client, seed=42)   # CHANGED
+    data = load_client_dataset_visa(Path(BASE_ROOT) / client, seed=42)   
     if data is None:
         print(f"  Skipped (insufficient data)")
         return None
 
-    good = data["test"]["normal"]     # CHANGED
-    anom = data["test"]["anomaly"]    # CHANGED
+    good = data["test"]["normal"]     
+    anom = data["test"]["anomaly"]    
 
     aucs, prs, f1s = [], [], []
     all_scores, all_labels, all_embeddings, all_paths = [], [], [], []
@@ -209,7 +209,7 @@ def evaluate_client(model, client, pr_curves):
         "auroc_mean": auc_m, "auroc_se": auc_se,
         "auprc_mean": pr_m, "auprc_se": pr_se,
         "f1_mean": f1_m, "f1_se": f1_se,
-        "held_out_anomaly_count": data["held_out_anomaly_count"]   # CHANGED
+        "held_out_anomaly_count": data["held_out_anomaly_count"]   
     }
 
 # ---------------- MAIN ---------------- #
