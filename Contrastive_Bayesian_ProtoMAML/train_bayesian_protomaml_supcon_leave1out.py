@@ -28,7 +28,8 @@ from utils.utils_data_fedcontrast_leave1out import (
 
 # ---------------- CONFIG ---------------- #
 
-BASE_ROOT = "/Users/sohamsarkar/Desktop/Projects/Research Projects/MAML/ML Project/Datasets/MVTech AD Dataset"
+BASE_ROOT = "/.../"
+"MVTech AD Dataset"
 
 CLIENTS = [
     "bottle","cable","capsule","carpet","grid",
