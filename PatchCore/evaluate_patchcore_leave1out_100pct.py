@@ -36,7 +36,7 @@ CLIENTS = [
     "tile","toothbrush","transistor","wood","zipper"
 ]
 
-#  MUST match the 100% training script
+
 MODEL_DIR = "runs/patchcore_shared_encoder_100pct"
 MEMORY_DIR = f"{MODEL_DIR}/memory_bank"
 OUT_DIR = f"{MODEL_DIR}/eval_results"
@@ -44,7 +44,7 @@ OUT_DIR = f"{MODEL_DIR}/eval_results"
 DEVICE = torch.device("cpu")
 os.makedirs(OUT_DIR, exist_ok=True)
 
-N_BOOTSTRAP = 200   # bootstrap resamples for SE
+N_BOOTSTRAP = 200   
 
 np.random.seed(42)
 torch.manual_seed(42)
