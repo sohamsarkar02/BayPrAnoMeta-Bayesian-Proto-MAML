@@ -212,7 +212,6 @@ def main():
         if res is not None:
             results[client] = res
 
-    # 🔹 Distinct filename for 100% results
     save_path = f"{OUT_DIR}/patchcore_100pct_results_with_se.npy"
     np.save(save_path, results)
 
