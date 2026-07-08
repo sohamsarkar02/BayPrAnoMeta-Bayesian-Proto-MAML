@@ -24,8 +24,7 @@ from utils.utils_plotting import plot_loss_curve
 # ---------------- CONFIG ---------------- #
 
 BASE_ROOT = (
-    "/Users/sohamsarkar/Desktop/Projects/"
-    "Research Projects/MAML/ML Project/Datasets/"
+    "/.../"
     "MVTech AD Dataset"
 )
 
