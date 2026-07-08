@@ -34,7 +34,7 @@ from utils.utils_eval_stats import aggregate_with_se
 
 # ---------------- CONFIG ---------------- #
 
-BASE_ROOT = "/Users/sohamsarkar/Desktop/ViSA Dataset"   
+BASE_ROOT = "/.../ViSA Dataset"   
 
 CLIENTS = [                                             
     "candle",
