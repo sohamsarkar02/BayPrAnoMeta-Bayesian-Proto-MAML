@@ -20,8 +20,8 @@ from sklearn.metrics import (
     confusion_matrix,
 )
 
-from utils.utils_data_visa_unseen_anomaly import (   # CHANGED
-    load_client_dataset_visa,                        # CHANGED
+from utils.utils_data_visa_unseen_anomaly import (   
+    load_client_dataset_visa,                        ]
     load_images,
     transform_eval,
 )
@@ -33,9 +33,9 @@ from utils.utils_plotting import (
 
 # ---------------- CONFIG ---------------- #
 
-BASE_ROOT = "/Users/sohamsarkar/Desktop/ViSA Dataset"   # CHANGED
+BASE_ROOT = "/.../ViSA Dataset"   
 
-CLIENTS = [                                             # CHANGED
+CLIENTS = [                                           
     "candle",
     "capsules",
     "cashew",
@@ -50,8 +50,8 @@ CLIENTS = [                                             # CHANGED
     "pipe_fryum"
 ]
 
-MODEL_PATH = "runs/protomaml_visa/checkpoints/final_model.pth"   # CHANGED
-OUT_DIR = "runs/protomaml_visa/eval"                             # CHANGED
+MODEL_PATH = "runs/protomaml_visa/checkpoints/final_model.pth"   
+OUT_DIR = "runs/protomaml_visa/eval"                             
 
 TEST_EPISODES = 300
 K_SHOT = 5
@@ -123,7 +123,7 @@ def evaluate_client(model, client, data):
             proto = z_sup.mean(dim=0, keepdim=True)
             z_q = model(xq)
 
-        # -------- Correct anomaly score --------
+      
         scores = ((z_q - proto) ** 2).sum(dim=1).cpu().numpy()
 
         pooled_scores.extend(scores)
@@ -199,7 +199,7 @@ def evaluate_client(model, client, data):
         "f1_mean": f1_mean,
         "f1_se": f1_se,
         "n_episodes": len(aucs),
-        "held_out_anomaly_count": data["held_out_anomaly_count"],   # CHANGED
+        "held_out_anomaly_count": data["held_out_anomaly_count"],   
     }
 
 # ---------------- MAIN ---------------- #
@@ -216,7 +216,7 @@ def main():
     results = {}
 
     for c in CLIENTS:
-        data = load_client_dataset_visa(                   # CHANGED
+        data = load_client_dataset_visa(                   
             os.path.join(BASE_ROOT, c), seed=42
         )
         if data is None:
