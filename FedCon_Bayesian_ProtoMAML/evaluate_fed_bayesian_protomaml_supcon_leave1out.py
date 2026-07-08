@@ -34,7 +34,8 @@ from utils.utils_plotting import (
 
 # ---------------- CONFIG ---------------- #
 
-BASE_ROOT = "/Users/sohamsarkar/Desktop/Projects/Research Projects/MAML/ML Project/Datasets/MVTech AD Dataset"
+BASE_ROOT = "/.../"
+"MVTech AD Dataset"
 
 CLIENTS = [
     "bottle","cable","capsule","carpet","grid",
