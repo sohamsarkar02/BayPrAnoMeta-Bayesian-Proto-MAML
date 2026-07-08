@@ -35,8 +35,7 @@ from utils.utils_eval_stats import aggregate_with_se
 # ---------------- CONFIG ---------------- #
 
 BASE_ROOT = (
-    "/Users/sohamsarkar/Desktop/Projects/"
-    "Research Projects/MAML/ML Project/Datasets/"
+    "/.../"
     "MVTech AD Dataset"
 )
 
