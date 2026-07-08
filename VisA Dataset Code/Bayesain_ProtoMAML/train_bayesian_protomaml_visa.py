@@ -23,7 +23,7 @@ from utils.utils_plotting import plot_loss_curve
 
 # ---------------- CONFIG ---------------- #
 
-BASE_ROOT = "/Users/sohamsarkar/Desktop/ViSA Dataset"   
+BASE_ROOT = "/.../ViSA Dataset"   
 
 CLIENTS = [                                             
     "candle",
