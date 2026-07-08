@@ -38,7 +38,7 @@ from utils.utils_data_visa_unseen_anomaly import (
 
 # ---------------- CONFIG ---------------- #
 
-BASE_ROOT = "/Users/sohamsarkar/Desktop/ViSA Dataset"   
+BASE_ROOT = "/.../ViSA Dataset"   
 
 CLIENTS = [                                             
     "candle",
