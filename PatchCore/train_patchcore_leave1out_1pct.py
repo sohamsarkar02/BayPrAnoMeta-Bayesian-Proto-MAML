@@ -21,8 +21,7 @@ from utils.utils_data_fedcontrast_leave1out import (
 # ---------------- CONFIG ---------------- #
 
 BASE_ROOT = (
-    "/Users/sohamsarkar/Desktop/Projects/"
-    "Research Projects/MAML/ML Project/Datasets/"
+    "/.../"
     "MVTech AD Dataset"
 )
 
@@ -34,12 +33,12 @@ CLIENTS = [
 
 DEVICE = torch.device("cpu")
 
-# 🔹 NEW output directory (separate from 10% and 25%)
+
 OUT_DIR = "runs/patchcore_shared_encoder_1pct"
 MEMORY_DIR = f"{OUT_DIR}/memory_bank"
 os.makedirs(MEMORY_DIR, exist_ok=True)
 
-CORESET_FRACTION = 0.01   # 🔹 1% coreset
+CORESET_FRACTION = 0.01   
 
 random.seed(42)
 np.random.seed(42)
@@ -100,7 +99,7 @@ def greedy_coreset(X, fraction, seed=42):
     np.random.seed(seed)
 
     N = X.shape[0]
-    k = max(1, int(N * fraction))  # ensure at least 1 sample
+    k = max(1, int(N * fraction))  
 
     idx = np.random.randint(0, N)
     selected = [idx]
